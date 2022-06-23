@@ -7,6 +7,7 @@
     --color-button: #f5f4fA;
     --color-logo: #000;
     --font-family-primary: 'Roboto', sans-serif;
+    --background-header: #EcEcEc
 }
 
 /*base*/
@@ -16,20 +17,41 @@ body {
     font-size: 14px;
     font-family: var(--font-family-primary);
     letter-spacing: 0.03em;
-    
+
 }
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
 /*header*/
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
 
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    text-decoration:none;
+    text-decoration: none;
     color: var(--color-logo);
 }
+
 .web-logo {
     color: var(--color-hover);
 }
+
+
+
 
 .menu-link {
     font-weight: 500;
@@ -37,8 +59,9 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-accent);
-
     
+
+
 }
 
 .menu-link:hover {
@@ -49,39 +72,60 @@ body {
     color: var(--color-hover);
 }
 
+.contact {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .contact-link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-primary);
     text-decoration: none;
+    
+    
 }
 
 .contact-link:hover {
     color: var(--color-hover);
 }
+
+.header-background {
+    background-color: var(--background-header)
+}
+
+
 /* Hero section*/
 
-.hero-background {
+.hero {
+    text-align: center;
     background-color: var(--background-secondary);
+    height: 600px;
+    margin-bottom: 94px;
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 200px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
-    color:var(--white-color-hero);
+    color: var(--white-color-hero);
     text-transform: uppercase;
 }
 
 .button {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: inherit;
     padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
-    line-height :1.8;
+    line-height: 1.8;
     letter-spacing: 0.06em;
     color: var(--white-color-hero);
     background-color: var(--color-hover);
@@ -89,15 +133,28 @@ body {
 
 /*main*/
 
+.title-subject {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.desc-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
 .title {
+    margin-top: 0;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    
+
 }
 
 .subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
     line-height: 1.7;
     color: var(--color-primary);
 }
@@ -168,19 +225,22 @@ body {
     padding: 10px 32px;
     letter-spacing: 0.03em;
     line-height: 1.5;
-    background-color: var(--color-button);
+    border: none;
     
+
+    min-width: 73px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    text-align: center;
+
 }
 
-.button-active:hover {
+.button-active:hover, .button-active:focus {
     background-color: var(--color-hover);
     color: var(--white-color-hero);
 }
 
-.button-active:focus {
-    background-color: var(--color-hover);
-    color: var(--white-color-hero);
-}
 
 
 .portfolio-item {
