@@ -38,7 +38,6 @@ p {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    height: auto;
 }
 
 img {
@@ -49,6 +48,7 @@ img {
 /*header*/
 
 .header-background {
+    border-bottom: 1px solid #eeeeee;
     background-color: var(--white-color-hero);
     height: 80px;
     border: 1px solid var(--background-header)
@@ -63,7 +63,6 @@ img {
 }
 
 .main-nav {
-    border-bottom: 1px;
     display: flex;
     align-items: center;
 }
@@ -190,6 +189,9 @@ img {
     display: flex;
 }
 
+.link-menu {
+    width: 270px;
+}
 
 .desc-title .link-menu + .link-menu {
     margin-left: 30px;
@@ -211,6 +213,10 @@ img {
 }
 
 /* section2 */
+
+.padding-reset {
+    padding-top: 0;
+}
 
 .section-title {
     text-align: center;
